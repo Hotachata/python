@@ -7,7 +7,7 @@ from gtts import gTTS
 import pygame
 
 # The text that you want to convert to audio
-mytext = 'La investigación de los mayores desafíos terrestres, tanto ambientales como científicos y sociales, recae en manos de los geocientíficos. Sin embargo, y a pesar de sus incansables esfuerzos, grandes misterios como el origen de la Tierra y de la vida misma continúan sin resolverse.'
+mytext = str(input("Ingresa el texto a convertir: "))
 
 # Language in which you want to convert (en/es)
 language = 'es'
@@ -20,7 +20,7 @@ myobj = gTTS(text=mytext, lang=language, slow=False)
 
 # Saving the converted audio in a mp3 file named
 # welcome 
-myobj.save("tarea.mp3")
+myobj.save("lenguaje3.mp3")
 
 # Initialize the mixer module
 pygame.mixer.init()
