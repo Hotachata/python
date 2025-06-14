@@ -4,8 +4,8 @@ import numpy as np
 def variables():
     a = float(input("\nIngrese el valor de a: "))
     b = float(input("Ingrese el valor de b: "))
-    o = float(input("Ingrese el valor de o: "))
-    m = float(input("Ingrese el valor de m: "))
+    o = float(input("Ingrese el valor de o (sigma): "))
+    m = float(input("Ingrese el valor de m (mu): "))
     return a, b, o, m
 
 while True:
